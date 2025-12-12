@@ -15,7 +15,7 @@ export const ContactSection = () => {
             Ready to roll with C1CC4D0? Hit the application form and shoot your shot — your place on the squad might be waiting.
           </p>
           <a href={contactInfo.applicationFormUrl} target="_blank" rel="noopener noreferrer">
-            <button className={`${theme === "dark" ? "bg-white text-black hover:bg-red-600 hover:text-white" : "bg-black text-white hover:bg-red-600"} px-8 py-3 font-bold transition-all transform hover:scale-105`}>
+            <button className={`${theme === "dark" ? "bg-white text-black hover:bg-red-600 hover:text-white" : "bg-black text-white hover:bg-red-600"} px-8 py-3 font-bold rounded-full transition-all transform hover:scale-105 cursor-pointer`}>
               Apply Now
             </button>
           </a>
@@ -26,8 +26,8 @@ export const ContactSection = () => {
             <div className="flex items-center">
               <Mail className="mr-4 text-red-600" />
               <div>
-                <span className={theme === "dark" ? "text-gray-400" : "text-gray-600"}>Email:</span>
-                <span className="ml-4">{contactInfo.email}</span>
+                <span className={`${theme === "dark" ? "text-gray-400" : "text-gray-600"} text-center`}>Email:</span>
+                <span className="ml-4 text-center">{contactInfo.email}</span>
               </div>
             </div>
             <div className="flex items-center">

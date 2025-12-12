@@ -17,7 +17,7 @@ export const HomeSection = () => {
         </p>
         <button
           onClick={() => scrollToSection("profiles")}
-          className={`${theme === "dark" ? "bg-white text-black hover:bg-red-600 hover:text-white" : "bg-black text-white hover:bg-red-600"} px-8 py-3 font-bold transition-all transform hover:scale-105`}
+          className={`${theme === "dark" ? "bg-white text-black hover:bg-red-600 hover:text-white" : "bg-black text-white hover:bg-red-600"} px-8 py-3 font-bold rounded-full transition-all transform hover:scale-105 cursor-pointer`}
         >
           JOIN OUR NEXT EVENT
         </button>
