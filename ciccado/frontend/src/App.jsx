@@ -11,10 +11,31 @@ import { ProfilesSection } from "./pages/ProfilesSection";
 import { SponsorsSection } from "./pages/SponsorsSection";
 import { ContactSection } from "./pages/ContactSection";
 import { navItems } from "./assets/data";
+import { useEffect, useState } from "react";
+import Loader from "./pages/Loader";
 
 const CTFTeamWebsite = () => {
   const { themeClasses } = useTheme();
   const activeSection = useActiveSection(navItems);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulated loading time (2 seconds)
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center min-h-screen bg-black">
+        <Loader />
+      </div>
+    );
+  }
+
 
   return (
     <div className={`min-h-screen ${themeClasses} font-mono relative overflow-hidden transition-colors duration-300`}>
