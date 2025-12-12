@@ -3,7 +3,7 @@ import { useTheme } from "../context/ThemeContext";
 import { socialProfiles } from "../assets/data";
 
 export const ProfilesSection = () => {
-  const { borderColor, hoverColor, cardBg } = useTheme();
+  const { borderColor, cardBg } = useTheme();
 
   const iconComponents = {
     Linkedin,
@@ -25,7 +25,7 @@ export const ProfilesSection = () => {
                 href={profile.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`border ${borderColor} p-12 ${profile.roundedClass} ${hoverColor} transition-all transform hover:scale-105 ${cardBg} group`}
+                className={`border ${borderColor} p-12 ${profile.roundedClass}  transition-all transform hover:scale-105 ${cardBg} group`}
               >
                 <IconComponent size={64} className={`mx-auto mb-4 ${profile.hoverColor}`} />
                 <h3 className="text-xl font-bold">{profile.name}</h3>
