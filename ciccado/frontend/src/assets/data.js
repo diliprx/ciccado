@@ -27,7 +27,7 @@ export const teamMembers = [
     name: "Hemanth Kumar B",
     handle: "N1ght_M4r3_d4rk",
     linkedin: "https://www.linkedin.com/in/hemanthkumarb485/",
-    ctftime: "https://tryhackme.com/p/N1ghtM4r3485"
+    ctftime: "https://tryhackme.com/p/N1ghtM4r3d4rk"
   },
   {
     name: "Kirthi Sai T",
